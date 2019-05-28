@@ -13,8 +13,8 @@ import (
 func main() {
 	s := &http.Server{
 		Addr:           fmt.Sprintf(":%d", 8082),
-		ReadTimeout:    3 * time.Second,
-		WriteTimeout:   3 * time.Second,
+		ReadTimeout:    60 * time.Second,
+		WriteTimeout:   60 * time.Second,
 		MaxHeaderBytes: 1 << 20, // Max header of 1MB
 	}
 
